@@ -13,8 +13,8 @@ public struct Child: Reducer {
     }
 }
 
-internal struct AnalyticsChild: Reducer {
-    var body: some ReducerOf<Child> {
+public struct AnalyticsChild: Reducer {
+    public var body: some ReducerOf<Child> {
         EmptyReducer()
     }
 }
