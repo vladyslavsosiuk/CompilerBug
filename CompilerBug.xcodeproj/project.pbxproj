@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		4C01E4FA2AAA2765005A4D19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C01E4F92AAA2765005A4D19 /* ContentView.swift */; };
 		4C01E4FC2AAA2767005A4D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C01E4FB2AAA2767005A4D19 /* Assets.xcassets */; };
 		4C01E4FF2AAA2767005A4D19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C01E4FE2AAA2767005A4D19 /* Preview Assets.xcassets */; };
+		4C3E15532AAA2C4100BDF1DF /* Root in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3E15522AAA2C4100BDF1DF /* Root */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4C01E4F92AAA2765005A4D19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C01E4FB2AAA2767005A4D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C01E4FE2AAA2767005A4D19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C01E5122AAA2B34005A4D19 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Modules; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3E15532AAA2C4100BDF1DF /* Root in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +38,7 @@
 		4C01E4EB2AAA2765005A4D19 = {
 			isa = PBXGroup;
 			children = (
+				4C01E5122AAA2B34005A4D19 /* Modules */,
 				4C01E4F62AAA2765005A4D19 /* CompilerBug */,
 				4C01E4F52AAA2765005A4D19 /* Products */,
 			);
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = CompilerBug;
+			packageProductDependencies = (
+				4C3E15522AAA2C4100BDF1DF /* Root */,
+			);
 			productName = CompilerBug;
 			productReference = 4C01E4F42AAA2765005A4D19 /* CompilerBug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 4C01E4EB2AAA2765005A4D19;
+			packageReferences = (
+				4C3E15512AAA2C4100BDF1DF /* XCLocalSwiftPackageReference "Modules" */,
+			);
 			productRefGroup = 4C01E4F52AAA2765005A4D19 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4C3E15512AAA2C4100BDF1DF /* XCLocalSwiftPackageReference "Modules" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C3E15522AAA2C4100BDF1DF /* Root */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Root;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C01E4EC2AAA2765005A4D19 /* Project object */;
 }
